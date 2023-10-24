@@ -26,7 +26,7 @@ Feature: Add place API testing validation
   Scenario: Add place
     Given Add place payload
     When User calls "AddPlaceAPI" with "POST" request
-    Then API returns success code "200"
+    Then API returns success code 200
     And "status" in response is "OK"
     And "scope" in response is "APP"
     
